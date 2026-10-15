@@ -1,0 +1,38 @@
+AFTER DARK CLASSIC 0.5
+
+INSTALACIÓN O ACTUALIZACIÓN
+1. Elegí Salir desde el icono de After Dark junto al reloj y cerrá sus vistas previas.
+2. Ejecutá AfterDark-Setup-0.5.exe.
+3. Si ya está instalado, el asistente propone su carpeta actual: podés instalar
+   directamente encima. No hace falta desinstalar la versión anterior.
+4. Se reemplazan los archivos del programa, conservando los ajustes y los archivos
+   ajenos al paquete. Si falla la copia, se recuperan los archivos anteriores.
+
+CONFIGURAR
+Ayuda muestra las instrucciones originales.
+Configurar abre una vista en pantalla completa con un panel flotante de ajustes.
+Los valores se guardan mientras movés los controles; el motor de vista previa se
+recarga automáticamente, con una breve interrupción de la animación, para aplicarlos.
+Stop termina la vista. También se sale al pulsar una tecla fuera del panel flotante.
+Las teclas dentro del panel y sus diálogos se usan normalmente para configurar.
+Las opciones adicionales de peces, criaturas y música están en Más opciones.
+
+INSTALADOR Y DESINSTALADOR
+El asistente tiene 435 x 323 píxeles a escala de Windows del 100%, con ilustraciones
+de 119 x 226. Conserva el fondo azul y el resto del estilo del instalador original.
+El desinstalador trabaja desde una copia temporal para poder eliminar también su
+ejecutable instalado. Elimina los archivos del paquete y las carpetas que queden
+vacías. Si hay archivos ajenos, conserva la carpeta que los contiene.
+Los ajustes del usuario se conservan fuera de la carpeta de instalación.
+Las copias de ejecutables de antiguos actualizadores se conservan en:
+  %ProgramData%\AfterDarkClassic\ProgramBackups
+
+ESTADO DE LAS PRUEBAS
+Compilación correcta, catálogo de 24 módulos y 54 controles, extracción y comparación
+de los 93 archivos del paquete y renderizado de las seis pantallas del asistente.
+Las pruebas de archivos cubren reemplazo, recuperación ante fallos, conservación
+de ajustes y archivos ajenos, límites de rutas y eliminación de carpetas vacías.
+La integración nativa de Windows conserva las comprobaciones de la versión anterior.
+La vista animada real, su teclado y la actualización/desinstalación con permisos
+de administrador todavía necesitan una prueba en la instalación del usuario.
+Las pruebas no modificaron la instalación existente ni sus preferencias.

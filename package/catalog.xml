@@ -1,0 +1,404 @@
+<catalog>
+  <module name="Art Critic" file="Art Critic.ad" image="module0.bmp" help="help0.rtf">
+    <control key="Control1" label="Critic Appears" kind="slider" originalType="1" default="3">
+      <option label="Never" value="0" />
+      <option label="Rarely" value="1" />
+      <option label="Often" value="2" />
+      <option label="Always" value="3" />
+    </control>
+    <control key="Control2" label="Duration" kind="slider" originalType="1" default="0">
+      <option label="10 Sec." value="0" />
+      <option label="20 Sec" value="1" />
+      <option label="30 Sec" value="2" />
+      <option label="45 Sec." value="3" />
+      <option label="1 Min" value="4" />
+      <option label="1.5 Mins." value="5" />
+      <option label="2 Mins." value="6" />
+      <option label="3 Mins." value="7" />
+      <option label="5 Mins." value="8" />
+      <option label="10 Mins." value="9" />
+      <option label="15 Mins." value="10" />
+    </control>
+    <control key="Control3" label="Display" kind="choice" originalType="3" default="1">
+      <option label="In Order" value="0" />
+      <option label="Random" value="1" />
+    </control>
+  </module>
+  <module name="Bad Dog!" file="Bad Dog!.ad" image="module1.bmp" help="help1.rtf">
+    <control key="Control0" label="Clear Screen First" kind="check" originalType="5" default="100">
+      <option label="Off" value="0" />
+      <option label="On (recommended)" value="1" />
+    </control>
+  </module>
+  <module name="CYb3r W@t" file="CYb3r W@t.ad" image="module2.bmp" help="help2.rtf">
+    <control key="Control0" label="Color" kind="choice" originalType="3" default="4">
+      <option label="Cyan" value="0" />
+      <option label="Blue" value="1" />
+      <option label="Amber" value="2" />
+      <option label="Random" value="3" />
+    </control>
+  </module>
+  <module name="Fish World" file="Fish World.ad" image="module3.bmp" help="help3.rtf">
+    <control key="Control1" label="Show Background" kind="check" originalType="5" default="1">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Flying Toasters!" file="Flying Toasters!.ad" image="module4.bmp" help="help4.rtf">
+    <control key="Control0" label="Objects" kind="slider" originalType="1" default="1">
+      <option label="Flight" value="0" />
+      <option label="Squadron" value="1" />
+      <option label="Air Wing" value="2" />
+      <option label="Swarm" value="3" />
+    </control>
+    <control key="Control1" label="Toasters" kind="choice" originalType="3" default="0">
+      <option label="Adults" value="0" />
+      <option label="Babies" value="1" />
+      <option label="Random" value="2" />
+    </control>
+    <control key="Control2" label="Music" kind="slider" originalType="1" default="5">
+      <option label="Never" value="0" />
+      <option label="1 Min." value="1" />
+      <option label="2 Mins" value="2" />
+      <option label="5 Mins." value="3" />
+      <option label="30 Mins." value="4" />
+      <option label="Always" value="5" />
+    </control>
+    <control key="Control3" label="Display Karaoke" kind="check" originalType="5" default="1">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Guernsey Madness" file="Guernsey Madness.ad" image="module5.bmp" help="help5.rtf">
+    <control key="Control1" label="Music" kind="slider" originalType="1" default="5">
+      <option label="Never" value="0" />
+      <option label="1 Min." value="1" />
+      <option label="2 Mins" value="2" />
+      <option label="5 Mins." value="3" />
+      <option label="30 Mins." value="4" />
+      <option label="Always" value="5" />
+    </control>
+    <control key="Control0" label="Flavor" kind="choice" originalType="3" default="11">
+      <option label="Vanilla" value="0" />
+      <option label="Chocolate" value="1" />
+      <option label="Strawberry" value="2" />
+      <option label="Blueberry" value="3" />
+      <option label="Grape" value="4" />
+      <option label="Banana" value="5" />
+      <option label="Lemon-Lime" value="6" />
+      <option label="Rainbow Splash" value="7" />
+      <option label="Bubblegum" value="8" />
+      <option label="Cinnamon" value="9" />
+      <option label="Mint" value="10" />
+      <option label="Tutti-Frutti" value="11" />
+    </control>
+  </module>
+  <module name="Hula Twins" file="Hula Twins.ad" image="module6.bmp" help="help6.rtf">
+    <control key="Control0" label="Music" kind="slider" originalType="1" default="5">
+      <option label="Never" value="0" />
+      <option label="1 Min." value="1" />
+      <option label="2 Mins" value="2" />
+      <option label="5 Mins." value="3" />
+      <option label="30 Mins." value="4" />
+      <option label="Always" value="5" />
+    </control>
+  </module>
+  <module name="Life &amp; All" file="Life &amp; All.ad" image="module7.bmp" help="help7.rtf">
+    <control key="Control0" label="Calculate" kind="choice" originalType="3" default="0">
+      <option label="Life" value="0" />
+      <option label="Universe" value="1" />
+      <option label="Everything" value="2" />
+      <option label="Nothing" value="3" />
+      <option label="Love" value="4" />
+      <option label="Money" value="5" />
+    </control>
+    <control key="Control1" label="Years" kind="slider" originalType="1" default="2">
+      <option label="1 Million" value="0" />
+      <option label="3 Million" value="1" />
+      <option label="5 Million" value="2" />
+      <option label="7 Million" value="3" />
+      <option label="9 Million" value="4" />
+    </control>
+  </module>
+  <module name="Magic Turtle" file="Magic Turtle.ad" image="module8.bmp" help="help8.rtf">
+    <control key="Control0" label="Speed" kind="slider" originalType="1" default="4">
+      <option label="Snail" value="0" />
+      <option label="Turtle" value="1" />
+      <option label="Mule" value="2" />
+      <option label="Rabbit" value="3" />
+      <option label="Racehorse" value="4" />
+    </control>
+    <control key="Control1" label="Display" kind="choice" originalType="3" default="0">
+      <option label="Program 1" value="0" />
+      <option label="Program 2" value="1" />
+      <option label="Program 3" value="2" />
+      <option label="Program 4" value="3" />
+      <option label="Program 5" value="4" />
+      <option label="Program 6" value="5" />
+      <option label="Program 7" value="6" />
+      <option label="Program 8" value="7" />
+      <option label="Random" value="8" />
+    </control>
+    <control key="Control2" label="Show Edit Message" kind="check" originalType="5" default="1">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Marbles!" file="Marbles!.ad" image="module9.bmp" help="help9.rtf">
+    <control key="Control0" label="Marbles" kind="slider" originalType="1" default="1">
+      <option label="A Few" value="0" />
+      <option label="A Pouch Full" value="1" />
+      <option label="A Jar Full" value="2" />
+      <option label="A Box Full" value="3" />
+    </control>
+    <control key="Control1" label="Pattern" kind="choice" originalType="3" default="8">
+      <option label="Pattern 1" value="0" />
+      <option label="Pattern 2" value="1" />
+      <option label="Pattern 3" value="2" />
+      <option label="Pattern 4" value="3" />
+      <option label="Pattern 5" value="4" />
+      <option label="Pattern 6" value="5" />
+      <option label="Pattern 7" value="6" />
+      <option label="Pattern 8" value="7" />
+      <option label="Random" value="8" />
+    </control>
+    <control key="Control2" label="Show Edit Message" kind="check" originalType="5" default="1">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Messages 4.0" file="Messages 4.0.ad" image="module10.bmp" help="help10.rtf">
+    <control key="Control0" label="Duration" kind="slider" originalType="1" default="0">
+      <option label="Short" value="0" />
+      <option label="Medium" value="1" />
+      <option label="Long" value="2" />
+    </control>
+    <control key="Control1" label="Style" kind="choice" originalType="3" default="2">
+      <option label="Fontasia" value="0" />
+      <option label="Foggy" value="1" />
+      <option label="Random" value="2" />
+    </control>
+    <control key="Control2" label="Message" kind="choice" originalType="3" default="6">
+      <option label="Custom" value="0" />
+      <option label="Out To Lunch" value="1" />
+      <option label="Gone for the day" value="2" />
+      <option label="I Quit!" value="3" />
+      <option label="Be Right Back" value="4" />
+      <option label="Gone for a caffeine fix" value="5" />
+      <option label="Random" value="6" />
+    </control>
+  </module>
+  <module name="Out 'n About" file="Out 'n About.ad" image="module11.bmp" help="help11.rtf">
+    <control key="Control0" label="Crowd" kind="slider" originalType="1" default="0">
+      <option label="Calm" value="0" />
+      <option label="Lively" value="1" />
+      <option label="Bustling" value="2" />
+    </control>
+  </module>
+  <module name="Points of View" file="Points of View.ad" image="module12.bmp" help="help12.rtf">
+    <control key="Control0" label="New Shapes" kind="slider" originalType="1" default="0">
+      <option label="10 Sec" value="0" />
+      <option label="30 Sec" value="1" />
+      <option label="1 Min" value="2" />
+      <option label="5 Min" value="3" />
+      <option label="10 Min" value="4" />
+    </control>
+    <control key="Control1" label="Color" kind="choice" originalType="3" default="0">
+      <option label="White" value="0" />
+      <option label="Yellow" value="1" />
+      <option label="Green" value="2" />
+      <option label="Blue" value="3" />
+      <option label="Random" value="4" />
+    </control>
+    <control key="Control2" label="Bigger Dots" kind="check" originalType="5" default="0">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Psycho Deli" file="Psycho Deli.ad" image="module13.bmp" help="help13.rtf">
+    <control key="Control0" label="Picture" kind="choice" originalType="3" default="11">
+      <option label="Tie-dye" value="0" />
+      <option label="The Dome" value="1" />
+      <option label="Peacock" value="2" />
+      <option label="The Well" value="3" />
+      <option label="Jagged" value="4" />
+      <option label="Night Train" value="5" />
+      <option label="Splash" value="6" />
+      <option label="Head cheese" value="7" />
+      <option label="Pinwheel" value="8" />
+      <option label="Gozar" value="9" />
+      <option label="Crop Circles" value="10" />
+      <option label="Random" value="11" />
+    </control>
+    <control key="Control1" label="Speed" kind="slider" originalType="1" default="0">
+      <option label="Slow" value="0" />
+      <option label="Fast" value="1" />
+      <option label="Faster" value="2" />
+      <option label="Fastest" value="3" />
+    </control>
+    <control key="Control2" label="Knots" kind="slider" originalType="1" default="5">
+      <option label="Center" value="0" />
+      <option label="A Few" value="1" />
+      <option label="Some" value="2" />
+      <option label="Many" value="3" />
+      <option label="Lots" value="4" />
+      <option label="Random" value="5" />
+    </control>
+  </module>
+  <module name="Rainforest" file="Rainforest.ad" image="module14.bmp" help="help14.rtf">
+    <control key="Control1" label="Number" kind="slider" originalType="1" default="2">
+      <option label="Very Few" value="0" />
+      <option label="Few" value="1" />
+      <option label="Some" value="2" />
+      <option label="Many" value="3" />
+      <option label="Hordes" value="4" />
+    </control>
+    <control key="Control2" label="Background" kind="choice" originalType="3" default="9">
+      <option label="Desktop" value="0" />
+      <option label="Black" value="1" />
+      <option label="Leaves" value="2" />
+      <option label="Wet Blue" value="3" />
+      <option label="Moss" value="4" />
+      <option label="Lichen" value="5" />
+      <option label="Rock" value="6" />
+      <option label="Mottled" value="7" />
+      <option label="Soft Green" value="8" />
+      <option label="Random" value="9" />
+    </control>
+    <control key="Control3" label="Foliage" kind="check" originalType="5" default="1">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Rock Paper Scissors" file="Rock Paper Scissors.ad" image="module15.bmp" help="help15.rtf">
+    <control key="Control0" label="Stars to Win" kind="slider" originalType="1" default="1">
+      <option label="One" value="0" />
+      <option label="Two" value="1" />
+      <option label="Three" value="2" />
+      <option label="Four" value="3" />
+    </control>
+    <control key="Control1" label="Display Score" kind="check" originalType="5" default="1">
+      <option label="Yes" value="1" />
+      <option label="No" value="0" />
+    </control>
+  </module>
+  <module name="Rodger Dodger" file="Rodger Dodger.ad" image="module16.bmp" help="help16.rtf">
+    <control key="Control0" label="Load Saved Level" kind="check" originalType="5" default="1">
+      <option label="Yes" value="1" />
+      <option label="No" value="0" />
+    </control>
+  </module>
+  <module name="Shadow Agents" file="Shadow Agents.ad" image="module17.bmp" help="help17.rtf">
+    <control key="Control3" label="Music" kind="slider" originalType="1" default="5">
+      <option label="Never" value="0" />
+      <option label="1 Min." value="1" />
+      <option label="2 Mins" value="2" />
+      <option label="5 Mins." value="3" />
+      <option label="30 Mins." value="4" />
+      <option label="Always" value="5" />
+    </control>
+    <control key="Control0" label="Agents" kind="slider" originalType="1" default="1">
+      <option label="Solo" value="0" />
+      <option label="Few" value="1" />
+      <option label="Many" value="2" />
+      <option label="Lots" value="3" />
+      <option label="Bunches" value="4" />
+    </control>
+    <control key="Control1" label="Clear Screen First" kind="check" originalType="5" default="0">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Slow Burn" file="Slow Burn.ad" image="module18.bmp" help="help18.rtf">
+    <control key="Control0" label="Burn" kind="slider" originalType="1" default="2">
+      <option label="Sizzling" value="0" />
+      <option label="Crackling" value="1" />
+      <option label="Searing" value="2" />
+      <option label="Scorching" value="3" />
+      <option label="Scalding" value="4" />
+      <option label="Inferno" value="5" />
+    </control>
+  </module>
+  <module name="Super Guy" file="Super Guy.ad" image="module19.bmp" help="help19.rtf">
+    <control key="Control0" label="Background Sound" kind="check" originalType="5" default="1">
+      <option label="Off" value="0" />
+      <option label="On" value="1" />
+    </control>
+  </module>
+  <module name="Swirling Magic" file="Swirling Magic.ad" image="module20.bmp" help="help20.rtf">
+    <control key="Control0" label="Number of Sea Pixies" kind="slider" originalType="1" default="1">
+      <option label="Some" value="0" />
+      <option label="A Few" value="1" />
+      <option label="Plenty" value="2" />
+      <option label="Loads" value="3" />
+      <option label="Tons" value="4" />
+      <option label="Tons!" value="5" />
+    </control>
+    <control key="Control1" label="Style" kind="choice" originalType="3" default="4">
+      <option label="Swirling Magic" value="0" />
+      <option label="Spaghetti Magic" value="1" />
+      <option label="Tiled Magic" value="2" />
+      <option label="Peacock Image" value="3" />
+      <option label="Random" value="4" />
+    </control>
+    <control key="Control2" label="Palette" kind="choice" originalType="3" default="7">
+      <option label="BluesReds" value="0" />
+      <option label="Candy" value="1" />
+      <option label="Desert" value="2" />
+      <option label="Reds" value="3" />
+      <option label="Rainbow" value="4" />
+      <option label="Field" value="5" />
+      <option label="Sparkle" value="6" />
+      <option label="Random" value="7" />
+    </control>
+  </module>
+  <module name="Time Flies" file="Time Flies.ad" image="module21.bmp" help="help21.rtf">
+    <control key="Control0" label="Type" kind="choice" originalType="3" default="2">
+      <option label="Liquid" value="0" />
+      <option label="Transformer" value="1" />
+      <option label="Random" value="2" />
+    </control>
+    <control key="Control1" label="Sounds" kind="choice" originalType="3" default="2">
+      <option label="Ticks" value="0" />
+      <option label="Chimes" value="1" />
+      <option label="Both" value="2" />
+      <option label="Neither" value="3" />
+    </control>
+    <control key="Control2" label="Drift Speed" kind="slider" originalType="1" default="2">
+      <option label="Still" value="0" />
+      <option label="Very Slow" value="1" />
+      <option label="Slow" value="2" />
+      <option label="Moderate" value="3" />
+      <option label="Fast" value="4" />
+    </control>
+  </module>
+  <module name="Starry Night" file="Starry Night.ad" image="module22.bmp" help="help22.rtf">
+    <control key="Control0" label="Buildings" originalType="2" kind="number" min="0" max="100" default="6912" />
+    <control key="Control1" label="Bldg Height" originalType="2" kind="number" min="5" max="95" default="8704" />
+    <control key="Control2" label="Flasher" originalType="5" kind="check">
+      <option value="0" label="Off" />
+      <option value="1" label="On" />
+    </control>
+  </module>
+  <module name="Toaster 2k" file="Toaster 2k.ad" image="module23.bmp" help="help23.rtf">
+    <control key="Control0" label="Objects" originalType="1" kind="slider">
+      <option value="0" label="Flight" />
+      <option value="1" label="Squadron" />
+      <option value="2" label="Air Wing" />
+      <option value="3" label="Swarm" />
+    </control>
+    <control key="Control1" label="Toasters" originalType="3" kind="choice">
+      <option value="0" label="Adults" />
+      <option value="1" label="Babies" />
+      <option value="2" label="Random" />
+    </control>
+    <control key="Control2" label="Music" originalType="1" kind="slider">
+      <option value="0" label="Never" />
+      <option value="1" label="1 Min." />
+      <option value="2" label="2 Mins." />
+      <option value="3" label="5 Mins." />
+      <option value="4" label="30 Mins." />
+      <option value="5" label="Always" />
+    </control>
+  </module>
+</catalog>
