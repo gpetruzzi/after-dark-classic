@@ -1,0 +1,15 @@
+/dist/
+/outputs/
+/payload.zip
+/package/AfterDarkControl.exe
+/package/After Dark.scr
+*.pdb
+*.user
+*.suo
+.vs/
+*.log
+*.tmp
+*.bak
+Thumbs.db
+Desktop.ini
+4.
