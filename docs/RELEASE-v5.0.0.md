@@ -23,3 +23,7 @@ Package, catalog, rendering, file rollback and settings-model checks passed. Rea
 ## Notice
 
 This is an independent compatibility project, not an official Berkeley Systems release. Original After Dark materials belong to their respective owners. Read README and NOTICE for limitations and third-party distribution information. This notice does not grant redistribution rights.
+
+## Acknowledgments
+
+Credit to Xnitro67 on YouTube, author of the original "After Dark 4.0 Settings.bat" used as the basis for this project's settings implementation.

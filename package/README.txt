@@ -42,3 +42,7 @@ still require a test on the destination computer. No installed preferences were 
 while building this edition.
 
 Read NOTICE.txt for attribution and third-party materials information.
+
+Acknowledgments
+
+Credit to Xnitro67 on YouTube, author of the original "After Dark 4.0 Settings.bat" used as the basis for this project's settings implementation.

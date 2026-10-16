@@ -90,3 +90,7 @@ See [NOTICE.md](NOTICE.md) and [THIRD_PARTY_FILES.csv](THIRD_PARTY_FILES.csv). A
 ## Report an issue
 
 Include your Windows version, project version, selected module and reproduction steps. Avoid posting personal data or original files whose redistribution is not authorized.
+
+## Acknowledgments
+
+Credit to Xnitro67 on YouTube, author of the original "After Dark 4.0 Settings.bat" used as the basis for this project's settings implementation.

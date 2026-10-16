@@ -13,3 +13,7 @@ Permissions must be checked before redistributing original materials, derived re
 The project is in development and is provided without promises of complete compatibility or error-free operation. Keep backups of the original installation and settings.
 
 Rights holders or their representatives may contact the repository maintainer through the contact information on the maintainer's GitHub profile or open a rights-related issue identifying the relevant material for review.
+
+## Acknowledgments
+
+Credit to Xnitro67 on YouTube, author of the original "After Dark 4.0 Settings.bat" used as the basis for this project's settings implementation.

@@ -14,3 +14,7 @@ files or an installer containing them. The software's age does not make it publi
 
 This project is provided without a promise of complete compatibility or error-free
 operation. Keep backups of your original installation and settings.
+
+Acknowledgments
+
+Credit to Xnitro67 on YouTube, author of the original "After Dark 4.0 Settings.bat" used as the basis for this project's settings implementation.

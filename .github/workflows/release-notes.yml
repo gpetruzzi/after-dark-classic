@@ -1,0 +1,19 @@
+name: Update English pre-release notes
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/RELEASE-v5.0.0.md
+      - .github/workflows/release-notes.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  notes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync published release notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release edit v5.0.0 --repo "$GITHUB_REPOSITORY" --notes-file docs/RELEASE-v5.0.0.md
