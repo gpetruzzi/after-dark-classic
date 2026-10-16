@@ -1,82 +1,92 @@
-# After Dark Classic
+# After Dark 5.0 — English Edition
 
-Panel de control e instalador independientes para utilizar los módulos originales de After Dark en Windows moderno, con una interfaz inspirada en el programa clásico.
+An independent compatibility control panel and installer for the original After Dark screensavers on modern Windows. Inspired by the classic interface, with a tray icon, module settings and native Windows screensaver integration.
 
-**Versión actual: 0.5, preliminar.** El proyecto está en desarrollo. La vista de configuración de esta versión y la actualización/desinstalación completas todavía requieren validación en una instalación real.
+**Pre-release.** Version 5.0 identifies this independent project, not an official Berkeley Systems release or a new version of the original modules. Original module formats and internal registry names remain unchanged for compatibility.
 
-![Panel principal](docs/panel-preview.png)
+![After Dark 5.0 control panel](docs/panel-5.0-english.png)
 
-## Funciones
+## Download
 
-- Icono residente junto al reloj.
-- Selección y controles para 24 módulos originales.
-- Integración con el salvapantallas y el tiempo de espera de Windows.
-- Panel flotante de configuración sobre una vista de pantalla completa, con botón Stop.
-- Aplicación de ajustes mediante recarga automática del motor de vista previa.
-- Selección de peces, criaturas y música cuando el módulo lo admite.
-- Instalador de estilo clásico, con actualización sobre una instalación existente y recuperación de archivos si falla la copia.
-- Desinstalación de archivos del programa y eliminación de carpetas vacías, conservando ajustes y archivos ajenos.
+Open [Releases](https://github.com/gpetruzzi/after-dark-classic/releases) and select **After Dark 5.0 — English Edition**, marked **Pre-release**. Download `AfterDark-5.0-Setup-English.exe` from its assets when available.
 
-## Aviso sobre After Dark y los archivos originales
+The installer includes third-party original software and resources. Read [NOTICE.md](NOTICE.md) before using or redistributing the package.
 
-Este es un proyecto independiente de compatibilidad. No es una versión oficial de After Dark ni está afiliado, patrocinado o respaldado por Berkeley Systems ni por los titulares actuales de sus derechos.
+## What's new in 5.0
 
-After Dark, sus marcas, módulos, motor, ilustraciones, música, sonidos y textos originales pertenecen a sus respectivos titulares. No se reclama autoría ni titularidad sobre esos materiales.
+- English setup wizard, control panel, tray menus, settings dialogs and project-generated error messages.
+- After Dark 5.0 product branding and Windows file-version metadata.
+- Compact classic setup wizard with the original artwork.
+- Existing module settings and Windows screensaver preferences remain compatible.
+- Updates can use the current installation folder without a prior uninstall.
 
-**Los archivos originales no se convierten en software libre ni en dominio público por aparecer en este repositorio. Este aviso no concede ni acredita permiso para redistribuirlos.** No se ha verificado una autorización de redistribución para los materiales de terceros incluidos en el paquete local de desarrollo.
+![English setup wizard](docs/setup-5.0-english.png)
 
-Antes de publicar esos materiales o un instalador que los contenga, deben verificarse los permisos o las licencias aplicables. Un repositorio de código puede publicarse sin incluir esos archivos, aportándolos localmente para compilar y utilizar el programa.
+## Features
 
-Consultá [el aviso completo](NOTICE.md) y [el inventario de archivos de terceros](THIRD_PARTY_FILES.csv).
+- 24 original screensaver modules with 54 controls and 248 selectable options.
+- Tray menu for opening the panel, starting a screensaver, toggling activation and sound, and exiting.
+- Native Windows screensaver selection and timeout settings.
+- Full-screen configuration preview with a floating control panel and **Stop** button.
+- Automatic preview-engine reload when settings change. This briefly interrupts the animation.
+- Additional fish, creature and MIDI/CD music settings for supported modules.
+- Classic gray interface, original module artwork and original help text.
+- File rollback if installation copying fails.
+- Uninstallation removes program-owned files and empty folders, preserving settings and unrelated files.
 
-## Instalar y actualizar
+![Floating configuration controls](docs/configure-5.0-english.png)
 
-El instalador completo se denomina `AfterDark-Setup-0.5.exe`.
+## Install or update
 
-1. Elegí **Salir** desde el icono junto al reloj y cerrá las vistas previas.
-2. Ejecutá el instalador completo.
-3. Para actualizar, conservá la carpeta de la instalación existente. No hace falta desinstalar primero.
+1. Choose **Exit** from the current After Dark tray icon and close its previews.
+2. Run `AfterDark-5.0-Setup-English.exe`.
+3. To update, keep the existing installation folder suggested by Setup.
+4. Complete Setup. No prior uninstall is required.
 
-El instalador contiene materiales de terceros: su publicación como descarga debe revisarse por separado del código del panel.
+Windows permission prompts and system dialogs use your Windows language. Original modules retain their original English content.
 
-## Compilar
+Some internal folder and registry names still say **After Dark 4.0**. These names are required by the original engine and are intentionally preserved. The Windows uninstall entry displays **After Dark 5.0**.
 
-Se necesitan Windows, Windows PowerShell y el compilador de .NET Framework 4.5 o posterior. La compilación genera aplicaciones x86 para utilizar el motor original de 32 bits.
+## Build from source
 
-Los recursos y módulos requeridos se encuentran en `package/` en el paquete local de desarrollo. Para una distribución sin esos materiales, cada usuario debe aportarlos desde una copia que esté autorizado a utilizar, respetando los nombres y rutas de `THIRD_PARTY_FILES.csv`.
+Requirements: Windows, Windows PowerShell, and the .NET Framework 4.5-or-later compiler. The executables target x86 for compatibility with the original 32-bit engine.
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\build.ps1 -Destination .\dist
 ```
 
-Los resultados se generan en `dist/`. El instalador completo es `dist/AfterDark-Setup.exe`.
+The full installer is generated as `dist/AfterDark-Setup.exe`. For the release asset, rename it to `AfterDark-5.0-Setup-English.exe`.
 
-## Estructura
+The original dependencies must be present in `package/`, including `After Dark Engine.scr`, the original DLLs, modules, artwork and music. `src/Version.cs` supplies the new version metadata. The build generates the managed screensaver launcher and control panel automatically.
 
-- `src/App.cs`: panel principal y control residente.
-- `src/Configure.cs`: vista de configuración y controles flotantes.
-- `src/Saver.cs`: lanzador de salvapantallas para Windows.
-- `src/Common.cs`: catálogo, preferencias e integración con Windows.
-- `src/Setup.cs`: asistente de instalación y desinstalación.
-- `src/PackageFiles.cs`: reemplazo, recuperación y limpieza de archivos.
-- `src/Resources.cs`: herramienta de extracción de recursos originales.
-- `src/Update.cs`: actualizador del ejecutable del panel.
-- `build.ps1`: compilación y empaquetado.
-- `package/`: archivos originales requeridos por la compilación local.
-- `docs/`: capturas e instrucciones.
+## Source layout
 
-## Estado de las pruebas
+- `src/App.cs`: main control panel and tray application.
+- `src/Configure.cs`: full-screen configuration host and floating controls.
+- `src/Saver.cs`: Windows screensaver launcher.
+- `src/Common.cs`: settings, module catalog and Windows integration.
+- `src/Setup.cs`: setup and uninstall wizard.
+- `src/PackageFiles.cs`: file replacement, rollback and cleanup.
+- `src/Resources.cs`: original-resource extraction utility.
+- `src/Update.cs`: control-panel executable updater.
+- `src/Version.cs`: 5.0 product and assembly metadata.
+- `package/`: build dependencies and installed English notices.
+- `docs/`: documentation and screenshots.
 
-Se comprobaron la compilación, el catálogo de 24 módulos y 54 controles, las pantallas del instalador, los paneles flotantes, los archivos del paquete, el reemplazo y la recuperación de archivos y la limpieza de carpetas vacías. La integración nativa tiene pruebas con almacenamiento en memoria y API simulada.
+## Validation and limitations
 
-La reproducción real de cada módulo, la configuración animada, el manejo del teclado y la actualización/desinstalación con permisos de administrador requieren pruebas adicionales. El comportamiento puede variar por módulo y configuración de Windows.
+Compilation, the module catalog, wizard and control-panel rendering, package extraction, file hashes, file replacement and rollback, preservation of settings and unrelated files, path containment and empty-directory cleanup have been checked. Windows settings logic has tests using in-memory storage and a simulated Windows API.
 
-El proyecto se proporciona sin promesas de compatibilidad completa ni de ausencia de errores. Conservá tus copias originales y respaldá tus ajustes antes de probar nuevas versiones.
+Real elevated installation, live animation and keyboard behavior, audio, and every original module still require testing on the destination computer. The project does not guarantee complete Windows or module compatibility. Keep backups of your original installation and settings.
 
-## Licencia del código nuevo
+## Attribution and third-party materials
 
-Todavía no se seleccionó una licencia para el código nuevo del panel y del instalador. La visibilidad pública del repositorio no debe interpretarse como una licencia de software libre. Cualquier futura licencia del código nuevo deberá excluir expresamente los materiales originales de terceros.
+Original After Dark modules, engine, artwork, music, sounds and help text belong to their respective owners. This project is not affiliated with or endorsed by Berkeley Systems or the current rights holders.
 
-## Informar problemas
+The original materials are **not** made open source or public domain by their inclusion here. No redistribution authorization for all original files has been verified. This disclaimer does not grant rights to those files; applicable permissions must be checked before redistributing originals or installers that contain them.
 
-Al abrir un issue, indicá la versión de Windows, la versión del proyecto, el módulo seleccionado y los pasos para reproducir el problema. No adjuntes claves, datos personales ni archivos originales cuya redistribución no esté autorizada.
+See [NOTICE.md](NOTICE.md) and [THIRD_PARTY_FILES.csv](THIRD_PARTY_FILES.csv). A license for the newly written code has not yet been selected; any future license must explicitly exclude third-party materials.
+
+## Report an issue
+
+Include your Windows version, project version, selected module and reproduction steps. Avoid posting personal data or original files whose redistribution is not authorized.

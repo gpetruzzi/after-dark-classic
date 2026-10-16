@@ -1,0 +1,43 @@
+name: Build and publish English pre-release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - src/Version.cs
+      - .github/workflows/release-english.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: english-v5-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build English installer
+        shell: powershell
+        run: |
+          .\build.ps1 -Destination .\dist
+          $installer = Get-Item .\dist\AfterDark-Setup.exe
+          if ($installer.VersionInfo.FileVersion -ne '5.0.0.0') { throw 'Unexpected installer version' }
+          Move-Item -LiteralPath $installer.FullName -Destination .\dist\AfterDark-5.0-Setup-English.exe
+          $hash = (Get-FileHash .\dist\AfterDark-5.0-Setup-English.exe -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$hash  AfterDark-5.0-Setup-English.exe" | Set-Content .\dist\SHA256SUMS.txt -Encoding ASCII
+      - name: Publish v5.0.0 as pre-release
+        shell: powershell
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          gh release view v5.0.0 --repo $env:GITHUB_REPOSITORY 2>$null
+          if ($LASTEXITCODE -eq 0) { throw 'v5.0.0 already exists; existing release was preserved.' }
+          gh release create v5.0.0 --repo $env:GITHUB_REPOSITORY --target $env:GITHUB_SHA --title 'After Dark 5.0 — English Edition' --notes-file docs/RELEASE-v5.0.0.md --prerelease --draft dist/AfterDark-5.0-Setup-English.exe dist/SHA256SUMS.txt
+          if ($LASTEXITCODE -ne 0) { throw 'Draft release creation or asset upload failed.' }
+          gh release edit v5.0.0 --repo $env:GITHUB_REPOSITORY --draft=false --prerelease
+          if ($LASTEXITCODE -ne 0) { throw 'Pre-release publication failed.' }

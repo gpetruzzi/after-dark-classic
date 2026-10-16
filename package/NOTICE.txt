@@ -1,0 +1,16 @@
+AFTER DARK 5.0 — THIRD-PARTY NOTICE
+
+This is an independent compatibility project. It is not affiliated with, sponsored by,
+or endorsed by Berkeley Systems or the current owners of After Dark.
+
+After Dark names, trademarks, original modules, engine, libraries, artwork, help text,
+music and sound remain the property of their respective owners. No ownership of those
+materials is claimed. The 5.0 branding identifies this compatibility project and does
+not indicate an official new release of the original software.
+
+This notice does not grant or establish permission to redistribute third-party material.
+The applicable permissions and licenses must be checked before redistributing original
+files or an installer containing them. The software's age does not make it public domain.
+
+This project is provided without a promise of complete compatibility or error-free
+operation. Keep backups of your original installation and settings.

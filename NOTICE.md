@@ -1,29 +1,15 @@
-# Aviso de autoría y materiales de terceros
+# Third-party notice
 
-Este proyecto desarrolla una implementación independiente de un panel de control, un lanzador y un instalador de compatibilidad para After Dark. Su finalidad técnica es permitir la selección y configuración de módulos originales en versiones modernas de Windows.
+After Dark 5.0 is an independent compatibility project. It is not an official new release of the original After Dark software and is not affiliated with, sponsored by, or endorsed by Berkeley Systems or the current owners of After Dark.
 
-## Ausencia de afiliación
+After Dark names, trademarks, original modules, engine, libraries, artwork, icons, music, sounds and help text remain the property of their respective owners. No authorship or ownership of those materials is claimed.
 
-El proyecto no está afiliado, patrocinado ni respaldado por Berkeley Systems ni por los titulares actuales de After Dark. Los nombres de productos y marcas se utilizan para identificar el software con el que se busca compatibilidad.
+`THIRD_PARTY_FILES.csv` records the original and derived third-party build dependencies and their SHA-256 hashes. The inventory describes the development package; it does not constitute a license or evidence of redistribution permission.
 
-## Material original
+No authorization to redistribute all original materials has been verified. Their age or discontinued support is not represented as permission to distribute them or as evidence that they are public domain. This notice does not grant rights to third-party files or override their applicable licenses.
 
-El motor de ejecución, los archivos de módulos `.ad`, bibliotecas originales, imágenes, iconos, cursores, música, sonidos y textos de ayuda originales son materiales de terceros. Pertenecen a sus respectivos titulares. El proyecto no reclama autoría, propiedad ni exclusividad sobre esos materiales.
+Permissions must be checked before redistributing original materials, derived resources or installers containing them. Any license selected for the project's newly written code must explicitly exclude third-party materials.
 
-El inventario `THIRD_PARTY_FILES.csv` enumera los recursos del paquete local de desarrollo y sus huellas SHA-256. La inclusión en ese inventario es una descripción de procedencia, no una licencia o prueba de autorización.
+The project is in development and is provided without promises of complete compatibility or error-free operation. Keep backups of the original installation and settings.
 
-## Permisos y distribución
-
-No se ha verificado una licencia o permiso que autorice la redistribución pública de todos los archivos originales utilizados para desarrollar y probar este proyecto. La antigüedad o falta de soporte de un programa no se presentan aquí como autorización para distribuirlo.
-
-Este aviso no otorga derechos sobre materiales de terceros, no sustituye su licencia ni elimina sus restricciones. Antes de publicar originales, recursos derivados o instaladores que los contengan, deben verificarse los permisos aplicables. El código nuevo puede prepararse por separado de esos archivos.
-
-Ninguna licencia que se elija para el código nuevo se aplicará automáticamente a los materiales de terceros.
-
-## Compatibilidad y garantías
-
-El proyecto está en desarrollo y no garantiza compatibilidad completa, conservación de datos ante cualquier fallo ni funcionamiento de todos los módulos. Se recomienda mantener respaldos de la instalación y las preferencias originales.
-
-## Consultas sobre derechos
-
-Los titulares o sus representantes pueden contactar al responsable del repositorio mediante los medios de contacto indicados en su perfil de GitHub o abrir un issue de derechos para identificar material y solicitar su revisión. Ese procedimiento no implica afirmar que el proyecto cuente con permiso de redistribución.
+Rights holders or their representatives may contact the repository maintainer through the contact information on the maintainer's GitHub profile or open a rights-related issue identifying the relevant material for review.
